@@ -15,13 +15,7 @@ body {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: var(--crystal-white);
   font-family: 'Crimson Text', serif;
-  min-height: 100vh;
-}
-
-.app-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Magical Background */
@@ -273,40 +267,4 @@ body {
   .service-cards {
     grid-template-columns: 1fr;
   }
-}
-
-.logo img {
-  padding: 30px 0;
-  width: 100%;
-}
-
-.resource-list {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: larger;
-  padding: 10px;
-  text-align: center;
-}
-
-.resource-list ul {
-    text-align: left;
-    margin: 0 auto;
-    width: 300px;
-}
-
-.resource-list a {
-  color: black;
-  line-height: 30px;
-}
-
-footer {
-  bottom: 10px;
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0 auto;
-  width: 100%;
-  position: fixed;
-  text-align: center;
-}
-
-footer img {
-    width: 20px;
-}
+} 

@@ -26,8 +26,8 @@
         <h2>Discover Your Magical Journey</h2>
         <p>Step into a world where ancient wisdom meets modern guidance</p>
         <div class="cta-buttons">
-          <button class="magical-button primary">Book a Reading</button>
-          <button class="magical-button secondary">Visit the Shop</button>
+          <button class="magical-button primary" (click)="onBookReading()">Book a Reading</button>
+          <button class="magical-button secondary" (click)="onVisitShop()">Visit the Shop</button>
         </div>
       </div>
     </section>
@@ -57,8 +57,4 @@
   <footer class="magical-footer">
     <p>© 2024 The Enchanted Haven - Where Magic Lives</p>
   </footer>
-</div>
-
-<div class="app-container">
-  <router-outlet></router-outlet>
 </div>

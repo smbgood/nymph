@@ -1,0 +1,25 @@
+<div class="shop-container">
+  <h2 class="shop-title">The Magical Emporium</h2>
+  
+  <div class="category-filters">
+    <button 
+      *ngFor="let category of categories" 
+      class="category-button"
+      [class.active]="selectedCategory === category"
+      (click)="filterByCategory(category)">
+      {{category}}
+    </button>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <div class="product-image">{{product.image}}</div>
+      <div class="product-info">
+        <h3>{{product.name}}</h3>
+        <p>{{product.description}}</p>
+        <div class="product-price">${{product.price}}</div>
+        <button class="magical-button primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div> 
